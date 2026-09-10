@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Early Learning Tracker</title>
+<meta name="description" content="A teacher-run tool for tracking letter, sound, number, and shape recognition assessments." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <nav class="sidebar">
+      <div class="brand">Early Learning<br/>Tracker</div>
+      <div class="brand-sub">Letters &middot; sounds &middot; numbers &middot; shapes</div>
+      <div class="nav">
+        <button data-nav="dashboard" class="active"><span class="nav-icon">&#9679;</span> Dashboard</button>
+        <button data-nav="students"><span class="nav-icon">&#9673;</span> Students</button>
+        <button data-nav="assess"><span class="nav-icon">&#9998;</span> Run assessment</button>
+        <button data-nav="progress"><span class="nav-icon">&#8599;</span> Progress</button>
+        <button data-nav="report"><span class="nav-icon">&#9993;</span> Family report</button>
+        <button data-nav="data"><span class="nav-icon">&#9881;</span> Data &amp; backup</button>
+      </div>
+      <div class="sidebar-footer">
+        All data stays in this browser only. Export a backup from Data &amp; backup regularly.
+      </div>
+    </nav>
+    <main id="app"></main>
+  </div>
+
+  <script src="app.js"></script>
+  <script src="ui.js"></script>
+</body>
+</html>
